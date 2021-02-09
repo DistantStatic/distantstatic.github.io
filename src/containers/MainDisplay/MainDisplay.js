@@ -1,14 +1,11 @@
 import { Component } from 'react';
-import {
-    Row,
-    Col
-} from 'reactstrap';
 
 import classes from './MainDisplay.module.css';
 
 import Aux from '../../hoc/Aux';
 import Projects from '../../components/Projects/Projects';
 import PageTitle from '../../components/PageTitle/PageTitle';
+import Utility from '../../components/Utility/Utility';
 
 export default class MainDisplay extends Component {
     state = {
@@ -21,12 +18,10 @@ export default class MainDisplay extends Component {
 
     render() {
         return (
-        <main className={this.state.darkMode ? classes.MainDisplayDark : classes.MainDisplayLight}>
+        <main id="main" className={this.state.darkMode ? classes.MainDisplayDark : classes.MainDisplayLight}>
             <PageTitle changeMode={this.changeMode}/>
-            <Row>
-                <Col><Projects/></Col>
-                <Col><div><p>lorem ip sum asdfasdfasdfasdfasdfasdf</p></div></Col>
-            </Row>
+            <Projects />
+            <Utility />
         </main>
         )
     }

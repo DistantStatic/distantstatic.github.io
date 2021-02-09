@@ -1,0 +1,11 @@
+.Icon {
+    font-size: 7em;
+    cursor: pointer;
+}
+
+.IconScrolled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5em;
+}

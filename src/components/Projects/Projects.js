@@ -30,21 +30,21 @@ const projects = (props) => {
     ]
     return (
         <Aux>
-        <h1>Projects</h1>
-        <Row>
-        {projectList.map((project) => {
-            return (
-                <Col>
-                <Project
-                    name={project.name}
-                    description={project.description}
-                    link={project.link}
-                    ghub={project.ghub}
-                    />
-                </Col>
-            )
-        })}
-        </Row>
+            <h1 className={classes.ProjectsTitle}>Projects</h1>
+            <Row>
+            {projectList.map((project) => {
+                return (
+                    <Col>
+                    <Project
+                        name={project.name}
+                        description={project.description}
+                        link={project.link}
+                        ghub={project.ghub}
+                        />
+                    </Col>
+                )
+            })}
+            </Row>
         </Aux>
     )
 }
