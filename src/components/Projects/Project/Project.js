@@ -23,7 +23,7 @@ const project = (props) => (
         </CardBody>
         <CardFooter>
             <CardLink href={props.link}>See Live</CardLink>
-            <CardLink hred={props.ghub}>See Code</CardLink>
+            <CardLink href={props.ghub}>See Code</CardLink>
         </CardFooter>
     </Card>
 )
