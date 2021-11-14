@@ -6,11 +6,10 @@ import {
     CardText,
     CardFooter,
     CardLink,
-    Button
 } from 'reactstrap';
-import classes from './Project.module.css';
 
-const project = (props) => (
+export default function Project() {
+    return (
     <Card>
         <CardHeader>
             <CardTitle>{props.name}</CardTitle>
@@ -26,6 +25,4 @@ const project = (props) => (
             <CardLink href={props.ghub}>See Code</CardLink>
         </CardFooter>
     </Card>
-)
-
-export default project;
+)}

@@ -2,12 +2,11 @@ import {
     Row,
     Col
 } from 'reactstrap';
-import Aux from '../../hoc/Aux';
 
 import classes from './Projects.module.css';
 import Project from './Project/Project';
 
-const projects = (props) => {
+export default function Projects() {
     const projectList = [
         {
             name: "CongressTrack/TrackUS",
@@ -29,7 +28,7 @@ const projects = (props) => {
         }
     ]
     return (
-        <Aux>
+        <>
             <h1 className={classes.ProjectsTitle}>Projects</h1>
             <Row>
             {projectList.map((project) => {
@@ -45,8 +44,6 @@ const projects = (props) => {
                 )
             })}
             </Row>
-        </Aux>
+        </>
     )
 }
-
-export default projects;
