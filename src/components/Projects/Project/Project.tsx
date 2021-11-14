@@ -8,21 +8,21 @@ import {
     CardLink,
 } from 'reactstrap';
 
-export default function Project(props) {
+export default function Project({name, description, link, ghub}: {name: string, description: string, link: string, ghub: string}) {
     return (
     <Card>
         <CardHeader>
-            <CardTitle>{props.name}</CardTitle>
+            <CardTitle>{name}</CardTitle>
         </CardHeader>
         <CardBody>
             {
             //<CardImg>{props.img}</CardImg>
             }
-            <CardText>{props.description}</CardText>
+            <CardText>{description}</CardText>
         </CardBody>
         <CardFooter>
-            <CardLink href={props.link}>See Live</CardLink>
-            <CardLink href={props.ghub}>See Code</CardLink>
+            <CardLink href={link}>See Live</CardLink>
+            <CardLink href={ghub}>See Code</CardLink>
         </CardFooter>
     </Card>
 )}

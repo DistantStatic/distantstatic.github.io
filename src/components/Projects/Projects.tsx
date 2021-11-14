@@ -6,7 +6,7 @@ import {
 import classes from './Projects.module.css';
 import Project from './Project/Project';
 
-export default function Projects() {
+export default function Projects({darkMode}: {darkMode: boolean}) {
     const projectList = [
         {
             name: "CongressTrack/TrackUS",
@@ -44,7 +44,7 @@ export default function Projects() {
     return (
         <>
             <h1 className={classes.ProjectsTitle}>Projects</h1>
-            <Row>
+            <Row md="3">
             {projectList.map((project) => {
                 return (
                     <Col>

@@ -1,4 +1,5 @@
 # Simple Portfolio Page
 
-Made in ReactJS with Create-React-App
-Uses Nivo graphs
+Portfolio housing my most prominent projects
+
+Made with ReactJS and TypeScript
