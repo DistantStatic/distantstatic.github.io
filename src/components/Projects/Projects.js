@@ -15,6 +15,20 @@ export default function Projects() {
             ghub: "https://github.com/DistantStatic/congress-track-frontend"
         },
         {
+            name: "League Scout",
+            description: "NextJS app that displays player ranks, match history, and match details. Data aggregated from Riot Game's API. Buit with TypeScript and styled with TailwindCSS",
+            link: "https://www.lolscout.com",
+            ghub: "https://github.com/DistantStatic/league-scout"
+
+        },
+        {
+            name: "Tyrian Scout",
+            description: "View all daily quests, quest details, and rewards for Guild Wars 2. Data sourced from the Guild Wars2 API",
+            link: "https://www.tyrianscout.com",
+            ghub: "https://github.com/DistantStatic/tyrianscout"
+
+        },
+        {
             name: "XSAF Dynamic Campaign Scores",
             description: "A site created in conjunction with the XSAF community to display scores against their new \"GOAP\" AI managed Dynamic Campaign.",
             link: "https://distantstatic.github.io/dyn-server-score",

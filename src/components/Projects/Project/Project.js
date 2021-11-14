@@ -8,7 +8,7 @@ import {
     CardLink,
 } from 'reactstrap';
 
-export default function Project() {
+export default function Project(props) {
     return (
     <Card>
         <CardHeader>

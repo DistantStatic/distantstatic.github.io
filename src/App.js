@@ -1,4 +1,3 @@
-import './App.css';
 import MainDisplay from './containers/MainDisplay/MainDisplay';
 
 function App() {
