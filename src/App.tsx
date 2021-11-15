@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Container } from 'reactstrap'
+import { Container } from 'react-bootstrap'
 import MainDisplay from './containers/MainDisplay/MainDisplay';
 import classes from './App.module.css'
 
