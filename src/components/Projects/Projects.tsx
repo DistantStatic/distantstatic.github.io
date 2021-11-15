@@ -1,7 +1,7 @@
 import {
     Row,
     Col
-} from 'reactstrap';
+} from 'react-bootstrap';
 
 import classes from './Projects.module.css';
 import Project from './Project/Project';
@@ -44,20 +44,24 @@ export default function Projects({darkMode}: {darkMode: boolean}) {
     return (
         <>
             <h1 className={classes.ProjectsTitle}>Projects</h1>
-            <Row md="3">
-            {projectList.map((project) => {
-                return (
-                    <Col>
-                    <Project
-                        name={project.name}
-                        description={project.description}
-                        link={project.link}
-                        ghub={project.ghub}
-                        />
-                    </Col>
-                )
-            })}
-            </Row>
+            
+            <div className={classes.projectContainer}>
+                <Row>
+                    {projectList.map((project) => {
+                        return (
+                            <Col xs={'12'} md={'6'} xl={'4'}>
+                            <Project
+                                darkMode={darkMode}
+                                name={project.name}
+                                description={project.description}
+                                link={project.link}
+                                ghub={project.ghub}
+                                />
+                            </Col>
+                        )
+                    })}
+                </Row>
+            </div>
         </>
     )
 }

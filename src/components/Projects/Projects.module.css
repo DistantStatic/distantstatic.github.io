@@ -2,3 +2,18 @@
     margin-top: .5em;
     margin-bottom: .6em;
 }
+
+.projectContainer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    overflow-y: auto;
+    height: 60vh;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .projectContainer{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

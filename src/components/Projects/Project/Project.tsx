@@ -1,28 +1,24 @@
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardTitle,
-    CardText,
-    CardFooter,
-    CardLink,
-} from 'reactstrap';
+import { Card } from 'react-bootstrap'
 
-export default function Project({name, description, link, ghub}: {name: string, description: string, link: string, ghub: string}) {
+export default function Project({darkMode, name, description, link, ghub}: {darkMode: boolean, name: string, description: string, link: string, ghub: string}) {
     return (
-    <Card>
-        <CardHeader>
-            <CardTitle>{name}</CardTitle>
-        </CardHeader>
-        <CardBody>
+    <Card 
+        bg={`${darkMode ? 'dark' : 'light'}`} 
+        style={{ marginTop: '2rem', marginBottom: '2rem'}} 
+        border={`${darkMode ? 'light' : 'dark'}`}
+        >
+        <Card.Header>
+            <Card.Title>{name}</Card.Title>
+        </Card.Header>
+        <Card.Body>
             {
             //<CardImg>{props.img}</CardImg>
             }
-            <CardText>{description}</CardText>
-        </CardBody>
-        <CardFooter>
-            <CardLink href={link}>See Live</CardLink>
-            <CardLink href={ghub}>See Code</CardLink>
-        </CardFooter>
+            <Card.Text>{description}</Card.Text>
+        </Card.Body>
+        <Card.Footer>
+            <Card.Link href={link}>See Live</Card.Link>
+            <Card.Link href={ghub}>See Code</Card.Link>
+        </Card.Footer>
     </Card>
 )}
