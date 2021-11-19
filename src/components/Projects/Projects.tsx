@@ -43,7 +43,7 @@ export default function Projects({darkMode}: {darkMode: boolean}) {
     ]
     return (
         <>
-            <h1 className={classes.ProjectsTitle}>Projects</h1>
+            <h1 className={classes.ProjectsTitle}>Projects:</h1>
             
             <div className={classes.projectContainer}>
                 <Row>

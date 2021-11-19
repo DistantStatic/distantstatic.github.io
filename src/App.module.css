@@ -5,10 +5,30 @@
 
 .darkMode {
     background-color: black;
-    color: white;
+    color: #4affff;
+    scrollbar-color:#4affff black;
+}
+
+.darkMode ::-webkit-scrollbar{
+  background-color: black;
+}
+
+.darkMode ::-webkit-scrollbar-thumb {
+  background-color: #4affff;
+  border-radius: 2rem;
 }
 
 .lightMode {
     background-color: whitesmoke;
-    color: black
+    color: black;
+    scrollbar-color:black whitesmoke;
+}
+
+.lightMode ::-webkit-scrollbar{
+  background-color: whitesmoke;
+}
+
+.lightMode ::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 2rem;
 }
