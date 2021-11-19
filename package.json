@@ -14,7 +14,7 @@
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
     "bootstrap": "^5.1.3",
-    "caniuse-lite": "^1.0.30001280",
+    "caniuse-lite": "^1.0.30001282",
     "gh-pages": "^3.1.0",
     "jquery": "^3.5.1",
     "popper": "^1.0.1",
