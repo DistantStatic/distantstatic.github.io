@@ -47,9 +47,10 @@ export default function Projects({darkMode}: {darkMode: boolean}) {
             
             <div className={classes.projectContainer}>
                 <Row>
-                    {projectList.map((project) => {
+                    {projectList.map((project, index) => {
                         return (
-                            <Col xs={'12'} md={'6'} xl={'4'}>
+                            <Col xs={'12'} md={'6'} xl={'4'} 
+                            key={index}>
                             <Project
                                 darkMode={darkMode}
                                 name={project.name}

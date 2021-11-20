@@ -1,8 +1,8 @@
 import { Card } from 'react-bootstrap'
 
-export default function Project({darkMode, name, description, link, ghub}: {darkMode: boolean, name: string, description: string, link: string, ghub: string}) {
+export default function Project({darkMode, name, description, link, ghub}: { darkMode: boolean, name: string, description: string, link: string, ghub: string}) {
     return (
-    <Card 
+    <Card
         bg={`${darkMode ? 'dark' : 'light'}`} 
         style={{ marginTop: '2rem', marginBottom: '2rem'}} 
         border={`${darkMode ? 'light' : 'dark'}`}
