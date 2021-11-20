@@ -1,6 +1,13 @@
+@keyframes rotation {
+    from {transform: rotate(0);}
+    to {transform: rotate(360);}
+}
+
 .Icon {
     font-size: 7em;
     cursor: pointer;
+    animation-name: rotation;
+    animation-duration: 4s;
 }
 
 .IconScrolled {
