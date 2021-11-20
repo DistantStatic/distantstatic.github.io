@@ -1,22 +1,58 @@
-.MainDisplayDark {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    background-color: black;
+@keyframes firstAppearance {
+    0% {opacity: 0;}
+    5% {opacity: .15;}
+    10% {opacity: .30;}
+    15% {opacity: .05;}
+    20% {opacity: .35;}
+    25% {opacity: 0;}
+    30% {opacity: .40;}
+    55% {opacity: .80;}
+    60% {opacity: .15;}
+    65% {opacity: .75;}
+    70% {opacity: .15;}
+    80% {opacity: .85;}
+    90% {opacity: .90;}
+    100% {opacity: 1;}
 }
 
-.MainDisplayLight .row .col .card .card-header .card-title {
-    color:red
+@-moz-keyframes firstAppearance {
+    0% {opacity: 0;}
+    5% {opacity: .15;}
+    10% {opacity: .30;}
+    15% {opacity: .05;}
+    20% {opacity: .35;}
+    25% {opacity: 0;}
+    30% {opacity: .40;}
+    55% {opacity: .80;}
+    60% {opacity: .15;}
+    65% {opacity: .75;}
+    70% {opacity: .15;}
+    80% {opacity: .85;}
+    90% {opacity: .90;}
+    100% {opacity: 1;}
 }
 
+@-webkit-keyframes firstAppearance {
+    0% {opacity: 0;}
+    5% {opacity: .15;}
+    10% {opacity: .30;}
+    15% {opacity: .05;}
+    20% {opacity: .35;}
+    25% {opacity: 0;}
+    30% {opacity: .40;}
+    55% {opacity: .80;}
+    60% {opacity: .15;}
+    65% {opacity: .75;}
+    70% {opacity: .15;}
+    80% {opacity: .85;}
+    90% {opacity: .90;}
+    100% {opacity: 1;}
+}
 
-.MainDisplayLight {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    background-color: white;
+.MainDisplay {
+    animation-name: firstAppearance;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
 }
