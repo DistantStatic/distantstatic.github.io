@@ -7,7 +7,9 @@ export default function PageTitle({changeMode}: {changeMode: ()=>void}) {
     return (
         <div className={classes.title}>
             <h1>Hello Friend</h1>
-            <CgDarkMode id="icon" className={classes.Icon} onClick={() => changeMode()}>Change Mode</CgDarkMode>
+            <div className={classes.iconDiv}>
+                <CgDarkMode id="icon" className={classes.Icon} onClick={() => changeMode()}>Change Mode</CgDarkMode>
+            </div>
         </div>
     )
 }
