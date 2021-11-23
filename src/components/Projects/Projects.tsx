@@ -6,7 +6,7 @@ import {
 import classes from './Projects.module.css';
 import Project from './Project/Project';
 
-export default function Projects({darkMode}: {darkMode: boolean}) {
+export default function Projects() {
     const projectList = [
         {
             name: "CongressTrack/TrackUS",
@@ -52,7 +52,6 @@ export default function Projects({darkMode}: {darkMode: boolean}) {
                             <Col xs={'12'} md={'6'} xl={'4'} 
                             key={index}>
                             <Project
-                                darkMode={darkMode}
                                 name={project.name}
                                 description={project.description}
                                 link={project.link}

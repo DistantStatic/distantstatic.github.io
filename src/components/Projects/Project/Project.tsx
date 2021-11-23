@@ -1,6 +1,9 @@
+import { useContext } from 'react'
 import { Card } from 'react-bootstrap'
+import { ThemeContext } from '../../../context-providers/theme'
 
-export default function Project({darkMode, name, description, link, ghub}: { darkMode: boolean, name: string, description: string, link: string, ghub: string}) {
+export default function Project({name, description, link, ghub}: { name: string, description: string, link: string, ghub: string}) {
+    const [ darkMode ] = useContext(ThemeContext)
     return (
     <Card
         bg={`${darkMode ? 'dark' : 'light'}`} 
