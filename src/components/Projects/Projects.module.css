@@ -8,8 +8,14 @@
     padding-right: 5rem;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 60vh;
+    height: 59vh;
     width: 100%;
+}
+
+@media screen and (max-height: 700px) {
+    .projectContainer {
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 480px) {
