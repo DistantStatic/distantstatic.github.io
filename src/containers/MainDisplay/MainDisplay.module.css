@@ -54,5 +54,8 @@
     animation-duration: 2000ms;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-
+    /**
+    overflow-y: scroll;
+    overflow-x: hidden;
+    */
 }
